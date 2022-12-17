@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+body{
+	font-family: Lato;
+}
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+	flex-grow: 1;
+}
+[class*="__container"] {
+	max-width: 1260px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	z-index: 10;
+	background: linear-gradient(55.65deg, rgba(255, 64, 58, 0.116) 0%, rgba(247, 94, 5, 0.124) 100%);
+}
+.header__container{
+	display: flex;
+	align-items: center;
+	gap:150px;
+}
+.header__menu{
+	flex-grow: 1;
+}
+.menu__list {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 60px;
+	row-gap: 10px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 60px;
+	color: rgb(0, 132, 255);
+}
+.menu__link:hover{
+	text-decoration: underline;
+	color: rgba(119, 0, 255, 0.45);
+}
+.header__logo img{
+	max-width: 100%;
+}
+@media (max-width:1199.99px) {
+	.header__container{
+		gap: 20px;
+	}
+}
+@media (max-width:990.98px) {
+	.menu__list {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 20px;
+		row-gap: 10px;
+	}
+}
+@media (max-width:767.98px) {
+	.header__logo--2 {
+		display: none;
+	}
+}
+@media (max-width:429.98px) {
+	.menu__list {
+		font-size: 45px;
+	}
+}
+/* section-1*/
+body{
+	background: url('../img/sky-or-heaven-nature-sunset-or-sunrise_107791-583.webp');
+	
+}
+.page{
+	position: relative;
+	padding: 180px 0px 80px 0px;
+}
+.main-block__body{
+	display: flex;
+}
+.body__content{
+	flex:1 70%;
+	padding-right: 40px;
+	align-items: center;
+
+}
+.body__titile{
+	font-family: 'Dancing Script', cursive;
+	font-size:60px;
+	text-align: center;
+	color: rgb(102, 46, 154);
+}
+.body__text{
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 135%;
+	letter-spacing: 1px;
+	color: rgb(153, 35, 193);
+}
+.body__img img{
+	max-width: 100%;
+}
+@media (max-width:1199.99px) {
+	.body__titile {
+		font-size: 50px;
+		padding-left: 150px;
+		text-align: center;
+	}
+	.body__text{
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 125%;
+		text-align: center;
+	}
+}
+
+@media (max-width:990.98px) {
+	.body__content {
+			text-align: center;
+		}
+
+}
+
+@media (max-width:767.98px) {
+
+	.main-block__body{
+		text-align: center;
+		flex-wrap: wrap;
+	}
+	.body__text{
+		text-align: center;
+		
+	}
+
+}
+/*пожелание*/
+.wish__title{
+	font-family: 'Dancing Script', cursive;
+	font-size: 70px;
+	color: rgb(131, 14, 14);
+	text-align: center;
+}
+.wish__text{
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 135%;
+	letter-spacing: 1px;
+	color: rgb(190, 36, 179);
+
+}
+.wish__mom{
+	font-family: 'Dancing Script', cursive;
+	text-decoration: underline;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 120%;
+	letter-spacing: 1px;
+	color:rgb(94, 50, 147);
+	z-index: 1;
+
+}
+.wish__img img {
+	max-width: 150px;
+}
+.wish__text{
+display: flex;
+}
+.wish__text--mom{
+	flex: 0 33.333%;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+.wish__yana{
+	font-family: 'Dancing Script', cursive;
+	text-decoration: underline;
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 120%;
+	letter-spacing: 1px;
+	color: rgb(94, 50, 147);
+	z-index: 2;
+	
+}
+.wish__text--yana{
+	flex: 0 auto;
+	margin-bottom: 25px;
+	align-items: center;
+}
+.wish__nata{
+	font-family: 'Dancing Script', cursive;
+	text-decoration: underline;
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 120%;
+	letter-spacing: 1px;
+	color: rgb(94, 50, 147);
+	z-index: 3;
+}
+.wish__text--nata{
+	flex: 0 33.333%;
+	align-items: center;
+	margin-bottom: 25px;
+}
+@media (max-width:767.98px) {
+	.wish__text {
+		text-align: center;
+		flex-wrap: wrap;
+	}
+	.wish__img--non{
+		display: none;
+	}
+	.wish__img{
+		min-width: 100%;
+	}
+}
+/* section-1*/
+.photo__title{
+	font-family: 'Dancing Script', cursive;
+	font-size: 70px;
+	color: rgb(158, 43, 15);
+	text-align: center;
+	margin-bottom: 15px;
+}
+.photo__img img{
+	max-width: 100%;
+}
+.photo__img {
+	position: relative;
+	z-index: 0;
+}
+
+.photo__img--1 {
+	transform: rotate(8deg);
+}
+
+.photo__img--2 {
+	position: absolute;
+	left: 600px;
+	top: 450px;
+	transform: rotate(-10deg)
+}
+
+.photo__img--5 {
+	position: absolute;
+	top: 990px;
+	left: 800px;
+}
+
+.photo__img--6 {
+	position: absolute;
+	top: 990px;
+	right: 370px;
+	transform: scale(0.8)
+}
+
+.photo__img--7 {
+	position: absolute;
+	top: 1700px;
+	right: 90px;
+	transform: skew(10deg, 5deg);
+}
+
+.photo__img--9 {
+	position: absolute;
+	top: 2450px;
+	right: 100px;
+	transform: skew(-10deg, -5deg);
+}
+
+.block__title {
+	font-family: 'Dancing Script', cursive;
+	font-size: 60px;
+	text-align: center;
+	color: rgb(102, 46, 154);
+	margin-bottom: 15px;
+}
+
+
+
+@media (max-width:429.98px) {
+	.photo__img {
+	position: static;
+	}
+	.photo__img--9{
+		z-index: -2;
+	}
+	.photo__img--7{
+		z-index: -1;
+	}
+	.photo__img--6{
+		display: none;
+	}
+
+}
